@@ -1,4 +1,12 @@
 export default function Home() {
-    return <h1>Welcome to Guess4!</h1>
-  }
-  
+  const handleSignUpClick = () => {
+    console.log('Sign up button clicked!');
+  };
+
+  return (
+    <div>
+      <h1>Welcome to Guess4!</h1>
+      <button onClick={handleSignUpClick}>Sign up</button>
+    </div>
+  );
+}
