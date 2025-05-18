@@ -1,6 +1,9 @@
+import { useRouter } from "next/router"; // useRouter gives you access to Next.js's router
+
 export default function Home() {
+  const router = useRouter();
   const handleSignUpClick = () => {
-    console.log('Sign up button clicked!');
+    router.push('/signup');
   };
 
   return (
